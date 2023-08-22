@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="app">
+            <header>
+                <input type="color" id="seed-color"/>
+
+                <div class='color-mode-dropdown'>
+                    <select name="color-mode" id="color-mode-selection" class="color-mode-selection">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-Dark</option>
+                        <option value="monochrome-light">Monochrome-Light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-Complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
+                    </select>
+                </div>
+                
+                <button id="get-color-scheme-btn">Get Color Scheme</button>
+                
+            </header>
+            <section id="color-column-container" class="color-column-container">
+
+                <div class="color-column">
+                    <div class="col" style="background-color: #F55A5A"></div>
+                    <div class="hexcode">#F55A5A</div>
+                </div>
+
+                <div class="color-column">
+                    <div class="col" style="background-color: #2B283A"></div>
+                    <div class="hexcode">#2B283A</div>
+                </div>
+
+                <div class="color-column">
+                    <div class="col" style="background-color: #FBF3AB"></div>
+                    <div class="hexcode">#FBF3AB</div>   
+                </div>
+
+                <div class="color-column">
+                    <div class="col" style="background-color: #AAD1B6"></div>
+                    <div class="hexcode">#AAD1B6</div> 
+                </div>
+
+                <div class="color-column">
+                    <div class="col" style="background-color: #A626D3"></div>
+                    <div class="hexcode">#A626D3</div>
+                </div>
+
+            </section>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+
+/* ==== OVERALL FORMAT ===== */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #1C1C1C
+}
+
+.app {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    max-height: 800px;
+    margin: auto;
+    background-color: #fff;
+}
+
+
+/* ====== HEADER ====== */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0.5em;
+}
+
+.color-mode-dropdown {
+    fill: #1F2937
+}
+
+.color-mode-selection {
+    width: 300px;
+}
+
+#get-color-scheme-btn,
+.color-mode-selection,
+input[type=color]{
+    border: 1px solid #D1D5DB;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0.2em 0.5em;
+}
+
+#get-color-scheme-btn {
+    cursor: pointer;
+}
+
+
+/* ====== MAIN SECTION ======= */
+#color-column-container {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.color-column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.col {
+    height: 110px;
+    flex-grow: 1;
+}
+
+
+/* ===== HEX CONTAINER/FOOTER ====== */
+.hexcode {
+    text-align: center;
+    padding: 1em;
+    font-size: small;
+}
+
